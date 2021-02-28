@@ -1,10 +1,4 @@
 #!/usr/bin/env bash
-#添加hosts;如无法正常下载Github Raw文件，请注释掉
-Host_IP=('151.101.88.133' '151.101.228.133')
-Host_Name=('raw.githubusercontent.com' 'raw.githubusercontent.com')
-for (( i=0; i<=${#Host_IP[@]}; i++ )) do
-echo "${Host_IP[$i]} ${Host_Name[$i]}" >> /etc/hosts
-done
 
 ##############################作者昵称（必填）##############################
 # 使用空格隔开
