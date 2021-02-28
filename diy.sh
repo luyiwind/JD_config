@@ -25,7 +25,7 @@ scripts_base_url_3=https://raw.githubusercontent.com/moposmall/Script/main/Me/
 # 将相应作者的脚本填写到以下变量中 
 my_scripts_list_1="format_share_jd_code.js whyour_jx_cfdtx.js" 
 my_scripts_list_2="jd_asus_iqiyi.js jd_fanslove.js jd_jump-jump.js jd_entertainment.js jd_shake.js" 
-my_scripts_list_3="jx_cfd.js" 
+my_scripts_list_3="jx_cfd.js jx_cfd_exchange.js" 
 
 ##############################随机函数##########################################
 echo -e "\033[37m-------------------------------------------------------------- \033[0m"
