@@ -23,7 +23,7 @@ scripts_base_url_2=https://raw.githubusercontent.com/i-chenzhe/qx/main/
 scripts_base_url_3=https://raw.githubusercontent.com/moposmall/Script/main/Me/ 
 ##############################作者脚本名称（必填）############################## 
 # 将相应作者的脚本填写到以下变量中 
-my_scripts_list_1="format_share_jd_code.js" 
+my_scripts_list_1="format_share_jd_code.js whyour_jx_cfdtx.js" 
 my_scripts_list_2="jd_asus_iqiyi.js jd_fanslove.js jd_jump-jump.js jd_entertainment.js jd_shake.js" 
 my_scripts_list_3="jx_cfd.js" 
 
