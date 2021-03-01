@@ -13,7 +13,7 @@ BASE="/opt/jd"
 
 ##############################作者昵称（必填）############################## 
 # 使用空格隔开 
-author_list="qq34347476 i-chenzhe moposmall" 
+author_list="qq34347476 i-chenzhe moposmall yangtingxiao" 
 ##############################作者脚本地址URL（必填）############################## 
 # 例如：https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_nc.js 
 # 1.从作者库中随意挑选一个脚本地址，每个作者的地址添加一个即可，无须重复添加 
@@ -21,11 +21,13 @@ author_list="qq34347476 i-chenzhe moposmall"
 scripts_base_url_1=https://gitee.com/qq34347476/quantumult-x/raw/master/ 
 scripts_base_url_2=https://raw.githubusercontent.com/i-chenzhe/qx/main/ 
 scripts_base_url_3=https://raw.githubusercontent.com/moposmall/Script/main/Me/ 
+scripts_base_url_4=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/
 ##############################作者脚本名称（必填）############################## 
 # 将相应作者的脚本填写到以下变量中 
 my_scripts_list_1="format_share_jd_code.js whyour_jx_cfdtx.js" 
 my_scripts_list_2="jd_asus_iqiyi.js jd_fanslove.js jd_jump-jump.js jd_entertainment.js jd_shake.js" 
 my_scripts_list_3="jx_cfd_exchange.js" 
+my_scripts_list_4="jd_baiTiao.js"
 
 ##############################随机函数##########################################
 echo -e "\033[37m-------------------------------------------------------------- \033[0m"
