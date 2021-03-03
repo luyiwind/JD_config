@@ -87,5 +87,5 @@ done
 ## 修正定时任务示例：sed -i "s|bash jd jd_test|bash ${ShellDir}/jd.sh test|g" config/crontab.list
 ##                 sed -i "s|bash jd jd_ceshi|bash ${ShellDir}/jd.sh ceshi|g" config/crontab.list
 
-echo -e "\033[37mdiy脚本更新完成... \033[0m"
+echo -e "\033[37mmyself脚本执行完成... \033[0m"
 echo -e ''
