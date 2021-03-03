@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-wget -q https://raw.githubusercontent.com/SuperManito/JD-FreeFuck/main/manual-update.sh /opt/jd/manual-update.sh
+wget -q https://raw.githubusercontent.com/SuperManito/JD-FreeFuck/main/manual-update.sh -O /opt/jd/manual-update.sh
 if [ $? -eq 0 ];then
   echo -e "\033[37mManual-update脚本同步成功... \033[0m"
   echo -e ''
@@ -10,7 +10,7 @@ else
   exit 1
 fi
 
-wget -q https://raw.githubusercontent.com/luyiwind/JD_config/main/append.sh /opt/jd/append.sh
+wget -q https://raw.githubusercontent.com/luyiwind/JD_config/main/append.sh -O /opt/jd/append.sh
 if [ $? -eq 0 ];then
   echo -e "\033[37m追加脚本同步成功... \033[0m"
   echo -e ''
