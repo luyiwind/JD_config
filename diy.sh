@@ -65,13 +65,16 @@ for author in $author_list; do
       script_date=$(cat scripts/$name | grep "http" | awk '{if($1~/^[0-59]/) print $1,$2,$3,$4,$5}' | sort | uniq | head -n 1)
       old_date=$(cat config/crontab.list | grep "$croname" | awk '{if($1~/^[0-59]/) print $1,$2,$3,$4,$5}')
       echo "${script_date}"
+      echo "${old_date}"
       if [ -z "${script_date}" ]; then
         cron_min=$(rand 1 59)
         cron_hour=$(rand 7 9)
         [ $(grep -c "$croname" ${ShellDir}/config/crontab.list) -eq 0 ] && sed -i "/hangup/a${cron_min} ${cron_hour} * * * bash ${ShellDir}/jd.sh $croname" ${ShellDir}/config/crontab.list
       elif [ $(grep -c "$croname" ${ShellDir}/config/crontab.list) -eq 0 ]; then
-        sed -i "/hangup/a${script_date} bash ${ShellDir}/jd.sh $croname" ${ShellDir}/config/crontab.list
+        #sed -i "/hangup/a${script_date} bash ${ShellDir}/jd.sh $croname" ${ShellDir}/config/crontab.list
+        echo "2"
       else
+        echo "3"
         [${old_date} -ne ${script_date}] && sed 's/${old_date}/${script_date}/' ${ShellDir}/config/crontab.list
       fi
     else
