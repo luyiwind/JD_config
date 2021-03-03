@@ -63,7 +63,7 @@ for author in $author_list; do
       echo -e "更新 $name 完成...\n"
       croname=$(echo "$name" | awk -F\. '{print $1}')
       script_date=$(cat scripts/$name | grep "http" | awk '{if($1~/^[0-59]/) print $1,$2,$3,$4,$5}' | sort | uniq | head -n 1)
-      echo ${script_date}
+      echo "${script_date}\n"
       if [ -z "${script_date}" ]; then
         cron_min=$(rand 1 59)
         cron_hour=$(rand 7 9)
