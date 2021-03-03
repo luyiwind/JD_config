@@ -1,5 +1,5 @@
 /*
-30,31 20-23/1 2,5 3 * jd_live_redrain.js
+30,31 20-23/1 2,5 3 * http://jd_live_redrain.js
 */
 const $ = new Env('超级直播间红包雨');
 let bodyList = {
