@@ -26,7 +26,7 @@ scripts_base_url_4=https://raw.githubusercontent.com/luyiwind/JD_config/js/
 my_scripts_list_1="format_share_jd_code.js whyour_jx_cfdtx.js"
 my_scripts_list_2="jx_cfd_exchange.js"
 my_scripts_list_3="jd_baiTiao.js"
-my_scripts_list_3="jd_live_redrain.js"
+my_scripts_list_4="jd_live_redrain.js"
 
 ## 活动脚本名称1：百变大咖秀、母婴跳一跳、摇一摇、摇京豆
 ## 活动脚本名称2：东东爱消除、个护爱消除
