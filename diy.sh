@@ -75,7 +75,7 @@ for author in $author_list; do
         echo "2"
       else
         echo "3"
-        [${old_date} -ne ${script_date}] && sed 's/${old_date}/${script_date}/' ${ShellDir}/config/crontab.list
+         sed 's/${old_date}/${script_date}/' ${ShellDir}/config/crontab.list
       fi
     else
       [ -f scripts/$name.new ] && rm -f scripts/$name.new
