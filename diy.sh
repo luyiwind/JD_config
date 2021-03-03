@@ -63,13 +63,16 @@ for author in $author_list; do
       echo -e "更新 $name 完成...\n"
       croname=$(echo "$name" | awk -F\. '{print $1}')
       script_date=$(cat scripts/$name | grep "http" | awk '{if($1~/^[0-59]/) print $1,$2,$3,$4,$5}' | sort | uniq | head -n 1)
+      old_date=$(cat config/crontab.list | grep "$croname" | awk '{if($1~/^[0-59]/) print $1,$2,$3,$4,$5}')
       echo "${script_date}"
       if [ -z "${script_date}" ]; then
         cron_min=$(rand 1 59)
         cron_hour=$(rand 7 9)
         [ $(grep -c "$croname" ${ShellDir}/config/crontab.list) -eq 0 ] && sed -i "/hangup/a${cron_min} ${cron_hour} * * * bash ${ShellDir}/jd.sh $croname" ${ShellDir}/config/crontab.list
-      else
-        [ $(grep -c "$croname" ${ShellDir}/config/crontab.list) -eq 0 ] && sed -i "/hangup/a${script_date} bash ${ShellDir}/jd.sh $croname" ${ShellDir}/config/crontab.list
+      else if [ $(grep -c "$croname" ${ShellDir}/config/crontab.list) -eq 0 ]; then
+        sed -i "/hangup/a${script_date} bash ${ShellDir}/jd.sh $croname" ${ShellDir}/config/crontab.list
+      else if [${old_date} -ne ${script_date}]; then
+        sed 's/${old_date}/${script_date}/' ${ShellDir}/config/crontab.list
       fi
     else
       [ -f scripts/$name.new ] && rm -f scripts/$name.new
