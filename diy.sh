@@ -69,7 +69,7 @@ for author in $author_list; do
         cron_min=$(rand 1 59)
         cron_hour=$(rand 7 9)
         [ $(grep -c "$croname" ${ShellDir}/config/crontab.list) -eq 0 ] && sed -i "/hangup/a${cron_min} ${cron_hour} * * * bash ${ShellDir}/jd.sh $croname" ${ShellDir}/config/crontab.list
-      else if [ $(grep -c "$croname" ${ShellDir}/config/crontab.list) -eq 0 ]; then
+      elif [ $(grep -c "$croname" ${ShellDir}/config/crontab.list) -eq 0 ]; then
         sed -i "/hangup/a${script_date} bash ${ShellDir}/jd.sh $croname" ${ShellDir}/config/crontab.list
       else
         [${old_date} -ne ${script_date}] && sed 's/${old_date}/${script_date}/' ${ShellDir}/config/crontab.list
