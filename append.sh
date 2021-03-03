@@ -8,4 +8,6 @@ else
   echo -e "\033[37mdiy脚本同步失败... \033[0m"
   echo -e ''
 fi
+echo -e "\033[37m执行myself脚本... \033[0m"
+echo -e ''
 bash $BASE/config/myself.sh
