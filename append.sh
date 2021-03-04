@@ -1,4 +1,4 @@
-wget -q https://raw.githubusercontent.com/luyiwind/JD_config/main/diy.sh -O $BASE/config/myself.sh
+wget -q https://raw.githubusercontent.com/luyiwind/JD_config/main/diy.sh -O $ShellDir/config/myself.sh
 if [ $? -eq 0 ];then
   echo -e "\033[37mmyself脚本同步成功... \033[0m"
   echo -e ''
