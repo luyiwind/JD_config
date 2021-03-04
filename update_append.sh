@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-wget -q https://raw.githubusercontent.com/SuperManito/JD-FreeFuck/main/manual-update.sh -O /opt/jd/manual-update.sh
+wget -q https://raw.githubusercontent.com/SuperManito/JD-FreeFuck/source/git_pull.sh -O /opt/jd/git_pull.sh
 if [ $? -eq 0 ];then
   echo -e "\033[37mManual-update脚本同步成功... \033[0m"
   echo -e ''
@@ -22,3 +22,5 @@ else
   echo -e ''
   exit 1
 fi
+
+wget -q https://raw.githubusercontent.com/SuperManito/JD-FreeFuck/source/git_pull.sh -O /opt/jd/git_pull.sh
