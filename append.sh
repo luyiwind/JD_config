@@ -8,4 +8,4 @@ else
 fi
 echo -e "\033[37m执行myself脚本... \033[0m"
 echo -e ''
-bash $BASE/config/myself.sh
+bash $ShellDir/config/myself.sh
