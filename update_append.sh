@@ -14,7 +14,7 @@ wget -q https://raw.githubusercontent.com/luyiwind/JD_config/main/append.sh -O /
 if [ $? -eq 0 ];then
   echo -e "\033[37m追加脚本同步成功... \033[0m"
   echo -e ''
-  cat /opt/jd/append.sh >> /opt/jd/manual-update.sh
+  cat /opt/jd/append.sh >> /opt/jd/git_pull.sh
   echo -e "\033[37mManual-update脚本追加成功... \033[0m"
   echo -e ''
 else
