@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-wget -q https://raw.githubusercontent.com/luyiwind/JD_config/main/update_append.sh -O /opt/jd/update_append.sh
+wget https://raw.githubusercontent.com/luyiwind/JD_config/main/update_append.sh -O /opt/jd/update_append.sh
 
 wget -q https://raw.githubusercontent.com/SuperManito/JD-FreeFuck/source/git_pull.sh -O /opt/jd/git_pull.sh
 if [ $? -eq 0 ];then
