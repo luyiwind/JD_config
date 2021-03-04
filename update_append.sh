@@ -23,5 +23,5 @@ else
   echo -e "\033[37mgit_pull追加脚本同步失败... \033[0m"
   echo -e ''
   exit 1
-fi
+fi 
 
