@@ -92,3 +92,27 @@ done
 
 echo -e "\033[37mmyself脚本执行完成... \033[0m"
 echo -e ''
+
+
+##############################  官  方  定  时  任  务  ##########################################
+## 自动同步用户自定义的diy.sh
+wget -q https://gitee.com/SuperManito/JD-FreeFuck/raw/main/diy/diy.sh -O /opt/jd/config/diy2.sh
+if [ $? -eq 0 ]; then
+  echo -e "自定义 DIY 脚本同步完成......"
+  echo -e ''
+  sleep 2s
+else
+  echo -e "自定义 DIY 脚本同步失败......"
+  echo -e ''
+  sleep 2s
+fi
+
+
+## 调用用户自定义的diy.sh
+if [ -f /opt/jd/config/diy2.sh ]; then
+  . /opt/jd/config/diy2.sh
+else
+  echo -e "diy2.sh 文件不存在，跳过执行自定义 DIY 脚本...\n"
+  echo -e ''
+fi
+
