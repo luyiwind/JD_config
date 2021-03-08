@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-## Author:SuperManito
-## Modified:2021-3-2
+## Author:Louis
+## Modified:2021-3-8
 
 ## 定义URL&File
 URL1=https://raw.githubusercontent.com/luyiwind/JD_config/main/scripts.sh
