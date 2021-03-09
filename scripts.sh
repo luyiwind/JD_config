@@ -71,7 +71,7 @@ for author in $author_list; do
       elif [ $(grep -c "$croname" ${ShellDir}/config/crontab.list) -eq 0 ]; then
         sed -i "/hangup/a${script_date} bash ${ShellDir}/jd.sh $croname" ${ShellDir}/config/crontab.list
       else
-        [ "${script_date}" != "${old_date}" ] && sed 's/${old_date}/${script_date}/' ${ShellDir}/config/crontab.list && echo "update cron for $croname \n ${old_date} => ${script_date}"
+        [ "${script_date}" != "${old_date}" ] && sed 's/${old_date}/${script_date}/' ${ShellDir}/config/crontab.list && echo -e "update cron for $croname \n ${old_date} => ${script_date}"
       fi
     else
       [ -f scripts/$name.new ] && rm -f scripts/$name.new
