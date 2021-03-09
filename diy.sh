@@ -38,3 +38,9 @@ function ExecShell() {
 
 ExecShell ${URL1} ${FileDiy1}
 ExecShell ${URL2} ${FileDiy2}
+
+echo -e "添加自定义NPM Packages......"
+echo -e ''
+cd /opt/jd/scripts
+npm install axios
+npm install moment
