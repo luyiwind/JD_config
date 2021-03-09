@@ -7,7 +7,7 @@ Proxy_URL=https://ghproxy.com/
 ShellDir=/opt/jd
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="qq34347476 moposmall yangtingxiao luyiwind"
+author_list="qq34347476 moposmall yangtingxiao"
 
 ## 添加更多作者昵称（必填）示例：author_list="i-chenzhe whyour testuser"  直接追加，不要新定义变量
 
