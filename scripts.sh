@@ -64,8 +64,8 @@ for author in $author_list; do
       croname=$(echo "$name" | awk -F\. '{print $1}')
       script_date=$(cat scripts/$name | grep "http" | awk '{if($1~/^[0-59]/) print $1,$2,$3,$4,$5}' | sort | uniq | head -n 1)
       old_date=$(cat config/crontab.list | grep "$croname" | awk '{if($1~/^[0-59]/) print $1,$2,$3,$4,$5}')
-      echo ${script_date}
-      echo ${old_date}
+      echo "${script_date}"
+      echo "${old_date}"
       if [ -z "${script_date}" ]; then
         cron_min=$(rand 1 59)
         cron_hour=$(rand 7 9)
@@ -73,7 +73,7 @@ for author in $author_list; do
       elif [ $(grep -c "$croname" ${ShellDir}/config/crontab.list) -eq 0 ]; then
         sed -i "/hangup/a${script_date} bash ${ShellDir}/jd.sh $croname" ${ShellDir}/config/crontab.list
       else
-        [ "${script_date}" != "${old_date}" ] && sed 's/${old_date}/${script_date}/' ${ShellDir}/config/crontab.list
+        [ "${script_date}" != "${old_date}" ] && sed 's/${old_date}/${script_date}/' ${ShellDir}/config/crontab.list && echo "update cron for $croname \n ${old_date} => ${script_date}"
       fi
     else
       [ -f scripts/$name.new ] && rm -f scripts/$name.new
