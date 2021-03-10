@@ -3,7 +3,6 @@
 ## Modified:2021-3-2
 
 ## 定义下载的脚本代理链接
-Proxy_URL=https://ghproxy.com/
 ShellDir=/opt/jd
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
@@ -54,7 +53,7 @@ for author in $author_list; do
     echo $url
     eval name=$js
     echo $name
-    wget -q --no-check-certificate $Proxy_URL$url -O scripts/$name.new
+    wget -q --no-check-certificate $url -O scripts/$name.new
 
     # 如果上一步下载没问题，才去掉后缀".new"，如果上一步下载有问题，就保留之前正常下载的版本
     # 随机添加个cron到crontab.list
