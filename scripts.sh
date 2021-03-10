@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
-## Author:SuperManito
-## Modified:2021-3-2
 
-## 定义下载的脚本代理链接
+## 定义目录
 ShellDir=/opt/jd
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
@@ -25,12 +23,7 @@ scripts_base_url_4=https://jdsharedresourcescdn.azureedge.net/jdresource/
 my_scripts_list_1="format_share_jd_code.js whyour_jx_cfdtx.js"
 my_scripts_list_2="jx_cfd_exchange.js"
 my_scripts_list_3="jd_baiTiao.js"
-my_scripts_list_4="jd_live_redrain.js"
-
-## 活动脚本名称1：百变大咖秀、母婴跳一跳、摇一摇、摇京豆
-## 活动脚本名称2：东东爱消除、个护爱消除
-
-## 添加更多脚本名称示例：my_scripts_list_3="jd_test1.js jd_test2.js jd_test3.js ......"
+#my_scripts_list_4="jd_live_redrain.js"
 
 ##############################  随  机  函  数  ##########################################
 rand() {
@@ -83,11 +76,6 @@ done
 ##########################  删  除  旧  的  失  效  活  动  ##########################
 ## 删除旧版本失效的活动示例： rm -rf ${ScriptsDir}/jd_test.js >/dev/null 2>&1
 
-
-##############################  修  正  定  时  任  务  ##########################################
-## 注意两边修改内容区别在于中间内容"jd"、"${ShellDir}/jd.sh"
-## 修正定时任务示例：sed -i "s|bash jd jd_test|bash ${ShellDir}/jd.sh test|g" config/crontab.list
-##                 sed -i "s|bash jd jd_ceshi|bash ${ShellDir}/jd.sh ceshi|g" config/crontab.list
 
 echo -e "\033[37mmyself脚本执行完成... \033[0m"
 echo -e ''
