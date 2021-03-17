@@ -9,11 +9,11 @@ author_list="i-chenzhe qq34347476 moposmall yangtingxiao"
 
 ##############################  更新i-chenzhe脚本  ##############################
 cd ${ShellDir}/i-chenzhe
-echo -e "\n刷新 i-chenzhe 脚本目录：\n"
+echo -e "\n刷新 i-chenzhe 脚本目录:"
 git fetch --all
 ExitStatusShell=$?
 git reset --hard origin/main
-
+echo -e "\n"
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_nc.js
 # 1.从作者库中随意挑选一个脚本地址，每个作者的地址添加一个即可，无须重复添加
