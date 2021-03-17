@@ -12,7 +12,7 @@ cd ${ShellDir}/i-chenzhe
 echo -e "\n刷新 i-chenzhe 脚本目录：\n"
 git fetch --all
 ExitStatusShell=$?
-git reset --hard origin/source
+git reset --hard origin/main
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_nc.js
