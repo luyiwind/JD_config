@@ -4,27 +4,32 @@
 ShellDir=/opt/jd
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="qq34347476 moposmall yangtingxiao i-chenzhe"
-
+author_list="i-chenzhe qq34347476 moposmall yangtingxiao"
 ## 添加更多作者昵称（必填）示例：author_list="i-chenzhe whyour testuser"  直接追加，不要新定义变量
+
+##############################  更新i-chenzhe脚本  ##############################
+cd ${ShellDir}/i-chenzhe
+echo -e "\n刷新 i-chenzhe 脚本目录：\n"
+git fetch --all
+ExitStatusShell=$?
+git reset --hard origin/source
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_nc.js
 # 1.从作者库中随意挑选一个脚本地址，每个作者的地址添加一个即可，无须重复添加
 # 2.将地址最后的 “脚本名称+后缀” 剪切到下一个变量里（my_scripts_list_xxx）
-scripts_base_url_1=https://gitee.com/qq34347476/quantumult-x/raw/master/ 
-scripts_base_url_2=https://raw.githubusercontent.com/moposmall/Script/main/Me/ 
-scripts_base_url_3=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/
-scripts_base_url_4=https://raw.githubusercontent.com/i-chenzhe/qx/main/
+scripts_base_url_1=https://raw.githubusercontent.com/i-chenzhe/qx/main/
+scripts_base_url_2=https://gitee.com/qq34347476/quantumult-x/raw/master/ 
+scripts_base_url_3=https://raw.githubusercontent.com/moposmall/Script/main/Me/ 
+scripts_base_url_4=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.githubusercontent.com/SuperManito/JD-FreeFuck/master/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
 # 将相应作者的脚本填写到以下变量中
-my_scripts_list_1="format_share_jd_code.js whyour_jx_cfdtx.js"
-my_scripts_list_2="jx_cfd_exchange.js"
-my_scripts_list_3="jd_baiTiao.js"
-my_scripts_list_4="jd_entertainment.js jd_fanslove.js jd_getFanslove.js jd_gjmh.js jd_shake.js jd_shakeBean.js jd_xmf.js z_lenovo.js z_marketLottery.js z_mother_jump.js z_superDay.js z_unionPoster.js z_wish.js"
-
+my_scripts_list_1=`echo *.js`
+my_scripts_list_2="format_share_jd_code.js whyour_jx_cfdtx.js"
+my_scripts_list_3="jx_cfd_exchange.js"
+my_scripts_list_4="jd_baiTiao.js"
 ##############################  随  机  函  数  ##########################################
 rand() {
   min=$1
