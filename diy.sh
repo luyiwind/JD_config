@@ -3,8 +3,8 @@
 ## Modified:2021-3-8
 
 ## 定义URL&File
-URL1=https://raw.githubusercontent.com/luyiwind/JD_config/main/scripts.sh
-URL2=https://gitee.com/SuperManito/JD-FreeFuck/raw/main/diy/diy.sh
+URL1=https://gitee.com/SuperManito/JD-FreeFuck/raw/main/diy/diy.sh
+URL2=https://raw.githubusercontent.com/luyiwind/JD_config/main/scripts.sh
 
 FileDiy1=/opt/jd/config/diy1.sh
 FileDiy2=/opt/jd/config/diy2.sh
