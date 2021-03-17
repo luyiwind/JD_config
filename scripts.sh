@@ -23,7 +23,7 @@ scripts_base_url_4=https://raw.githubusercontent.com/i-chenzhe/qx/main/
 my_scripts_list_1="format_share_jd_code.js whyour_jx_cfdtx.js"
 my_scripts_list_2="jx_cfd_exchange.js"
 my_scripts_list_3="jd_baiTiao.js"
-my_scripts_list_4="z_superDay.js"
+my_scripts_list_4="jd_entertainment.js jd_fanslove.js jd_getFanslove.js jd_gjmh.js jd_shake.js jd_shakeBean.js jd_xmf.js z_lenovo.js z_marketLottery.js z_mother_jump.js z_superDay.js z_unionPoster.js z_wish.js"
 
 ##############################  随  机  函  数  ##########################################
 rand() {
