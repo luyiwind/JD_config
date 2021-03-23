@@ -22,7 +22,7 @@ scripts_base_url_1=https://raw.githubusercontent.com/i-chenzhe/qx/main/
 scripts_base_url_2=https://gitee.com/qq34347476/quantumult-x/raw/master/ 
 scripts_base_url_3=https://raw.githubusercontent.com/moposmall/Script/main/Me/ 
 scripts_base_url_4=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/
-scripys_base_url_5=https://raw.githubusercontent.com/whyour/hundun/master/quanx/
+scripts_base_url_5=https://raw.githubusercontent.com/whyour/hundun/master/quanx/
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.githubusercontent.com/SuperManito/JD-FreeFuck/master/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
