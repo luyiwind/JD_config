@@ -4,7 +4,7 @@
 ShellDir=/opt/jd
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="i-chenzhe qq34347476 moposmall yangtingxiao whyour"
+author_list="i-chenzhe qq34347476 moposmall yangtingxiao whyour mine"
 ## 添加更多作者昵称（必填）示例：author_list="i-chenzhe whyour testuser"  直接追加，不要新定义变量
 
 ##############################  更新i-chenzhe脚本  ##############################
@@ -23,6 +23,7 @@ scripts_base_url_2=https://gitee.com/qq34347476/quantumult-x/raw/master/
 scripts_base_url_3=https://raw.githubusercontent.com/moposmall/Script/main/Me/ 
 scripts_base_url_4=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/
 scripts_base_url_5=https://raw.githubusercontent.com/whyour/hundun/master/quanx/
+scripts_base_url_6=http://158.101.69.19/api/public/dl/990mnn6b/
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.githubusercontent.com/SuperManito/JD-FreeFuck/master/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
@@ -32,6 +33,7 @@ my_scripts_list_2="format_share_jd_code.js whyour_jx_cfdtx.js"
 my_scripts_list_3="jx_cfd_exchange.js"
 my_scripts_list_4="jd_baiTiao.js"
 my_scripts_list_5="jx_factory.js"
+my_scripts_list_6="sendNotify.js"
 ##############################  随  机  函  数  ##########################################
 rand() {
   min=$1
@@ -82,7 +84,6 @@ done
 
 ##########################  删  除  旧  的  失  效  活  动  ##########################
 ## 删除旧版本失效的活动示例： rm -rf ${ScriptsDir}/jd_test.js >/dev/null 2>&1
-
 
 echo -e "\033[37mmyself脚本执行完成... \033[0m"
 echo -e ''
